@@ -63,7 +63,7 @@ flowchart LR
 ```mermaid
 flowchart TD
     S[Start] --> A{Same process only?}
-    A -- yes --> CH[Channel&lt;T&gt; / Hangfire]
+    A -- yes --> CH[Channel #lt;T#gt; / Hangfire]
     A -- no --> B{Managed cloud service<br/>preferred and acceptable?}
     B -- yes --> CL[Azure Service Bus / SQS+SNS / Pub/Sub]
     B -- no --> C{Long retention + replay +<br/>very high throughput analytics?}

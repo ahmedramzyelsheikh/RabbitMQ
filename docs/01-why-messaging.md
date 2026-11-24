@@ -170,7 +170,7 @@ flowchart TD
     A[Need to integrate / do work] --> B{Does the caller need<br/>the result immediately?}
     B -- yes --> HTTP[HTTP / gRPC<br/>+ timeouts, retries, circuit breaker]
     B -- no --> C{Only inside one service,<br/>low volume?}
-    C -- yes --> L[In-process Channel&lt;T&gt; /<br/>Hangfire / jobs table]
+    C -- yes --> L[In-process Channel #lt;T#gt; /<br/>Hangfire / jobs table]
     C -- no --> D{Need long retention,<br/>replay, huge throughput,<br/>stream processing?}
     D -- yes --> K[Kafka or RabbitMQ Streams]
     D -- no --> R[RabbitMQ queues:<br/>work queues, pub/sub, routing,<br/>retries, dead letters]
