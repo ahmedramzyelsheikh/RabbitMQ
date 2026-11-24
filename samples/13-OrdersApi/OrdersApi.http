@@ -1,0 +1,17 @@
+@host = http://localhost:5080
+
+POST {{host}}/orders
+Content-Type: application/json
+
+{ "customerEmail": "mona@example.com", "total": 450 }
+
+###
+
+POST {{host}}/orders
+Content-Type: application/json
+
+{ "customerEmail": "", "total": -1 }
+
+###
+
+GET {{host}}/health

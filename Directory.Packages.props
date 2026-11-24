@@ -1,0 +1,10 @@
+<Project>
+  <ItemGroup>
+    <PackageVersion Include="RabbitMQ.Client" Version="7.3.0" />
+    <PackageVersion Include="MassTransit.RabbitMQ" Version="8.5.12" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.15" />
+    <PackageVersion Include="Microsoft.Extensions.Hosting" Version="10.0.15" />
+    <PackageVersion Include="Testcontainers.RabbitMq" Version="4.17.0" />
+    <PackageVersion Include="xunit.v3" Version="4.0.3" />
+  </ItemGroup>
+</Project>

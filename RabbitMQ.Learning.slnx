@@ -1,0 +1,22 @@
+<Solution>
+  <Folder Name="/samples/">
+    <Project Path="samples/01-HelloWorld/HelloWorld.csproj" />
+    <Project Path="samples/02-WorkQueues/WorkQueues.csproj" />
+    <Project Path="samples/03-PublishSubscribe/PublishSubscribe.csproj" />
+    <Project Path="samples/04-Routing/Routing.csproj" />
+    <Project Path="samples/05-Topics/Topics.csproj" />
+    <Project Path="samples/06-Headers/HeadersExchange.csproj" />
+    <Project Path="samples/07-Rpc/Rpc.csproj" />
+    <Project Path="samples/08-PublisherConfirms/PublisherConfirms.csproj" />
+    <Project Path="samples/09-DeadLetterRetry/DeadLetterRetry.csproj" />
+    <Project Path="samples/10-QueueFeatures/QueueFeatures.csproj" />
+    <Project Path="samples/11-Streams/Streams.csproj" />
+    <Project Path="samples/12-OutboxInbox/OutboxInbox.csproj" />
+    <Project Path="samples/13-OrdersApi/OrdersApi.csproj" />
+    <Project Path="samples/14-MassTransit/MassTransitDemo.csproj" />
+    <Project Path="samples/Shared/Shared.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/LearningTests/LearningTests.csproj" />
+  </Folder>
+</Solution>
