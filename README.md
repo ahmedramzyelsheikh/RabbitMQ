@@ -22,6 +22,30 @@ dotnet test                                            # learning tests (Testcon
 Management UI: http://localhost:15672 (guest / guest). Set `RABBITMQ_URI` to use another broker,
 for example `amqp://user:pass@host:5672/vhost`.
 
+## Theory (start here)
+
+👉 **[Learning path](docs/README.md)**: 13 docs with workflow diagrams, from "why messaging" to production.
+
+| Phase | Docs |
+|-------|------|
+| 1. Foundations | [01 Why messaging, traditional ways, when to use / not use](docs/01-why-messaging.md) · [02 Core concepts](docs/02-core-concepts.md) · [03 Exchanges & routing](docs/03-exchanges-and-routing.md) |
+| 2. Reliability | [04 Consumers, acks, prefetch](docs/04-consumers-acks-prefetch.md) · [05 Publisher reliability](docs/05-publisher-reliability.md) · [06 Queue types & arguments](docs/06-queue-types-and-arguments.md) · [07 Errors, DLX, retries](docs/07-errors-dead-letter-retry.md) |
+| 3. Architecture | [08 Patterns](docs/08-messaging-patterns.md) · [09 Guarantees, idempotency, outbox](docs/09-delivery-guarantees-outbox.md) · [10 .NET packages](docs/10-dotnet-packages.md) |
+| 4. Production | [11 Operations](docs/11-production-operations.md) · [12 RabbitMQ vs Kafka & others](docs/12-rabbitmq-vs-others.md) · [13 Interview questions & exercises](docs/13-interview-questions-and-exercises.md) |
+
+## Packages
+
+| Package | Why |
+|---------|-----|
+| `RabbitMQ.Client` 7.3 | official async AMQP client, used by every sample |
+| `Microsoft.EntityFrameworkCore.Sqlite` | outbox / inbox tables (sample 12) |
+| `MassTransit.RabbitMQ` 8.5 (Apache 2.0) | framework comparison (sample 14) |
+| `Microsoft.Extensions.Hosting` | generic host for MassTransit |
+| `Testcontainers.RabbitMq` + `xunit.v3` | learning tests against a real broker |
+
+More options (OpenTelemetry, Aspire, streams client, EasyNetQ, Wolverine, NServiceBus) in
+[doc 10](docs/10-dotnet-packages.md).
+
 ## Samples
 
 | # | Sample | What it teaches |
